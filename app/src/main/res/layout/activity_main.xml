@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0,1,2,3"
+        android:stretchColumns="0,1,2,3"
+        android:id="@+id/btnset">
+
+        <TableRow>
+            <Button
+                android:text="HOME"
+                android:layout_height="50dp"
+                android:id="@+id/btn1"
+                android:background="#DDD"/>
+            <Button
+                android:text="BOOK Tree"
+                android:layout_height="50dp"
+                android:id="@+id/btn2"
+                android:background="#DDD"/>
+            <Button
+                android:text="GAME"
+                android:layout_height="50dp"
+                android:id="@+id/btn3"
+                android:background="#DDD"/>
+            <Button
+                android:text="Setting"
+                android:layout_height="50dp"
+                android:id="@+id/btn4"
+                android:background="#DDD"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_below="@id/btnset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </FrameLayout>
+
+</RelativeLayout>
